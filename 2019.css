@@ -1,0 +1,191 @@
+body {
+  background-color: rgba(181, 126, 220, 0.15);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(181, 126, 220);
+}
+#events a, #past-events a {
+  color: black;
+  text-decoration: none;
+}
+
+#past-events {
+  display: none;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  margin-top: 1.5em;
+}
+
+#banner {
+  background-image: url("contra-dancing.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1em;
+}
+
+#logo-wrapper {
+  width: 75%;
+  max-width: 35em;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 0.25em;
+}
+
+#logo-wrapper img {
+  width: 100%;
+}
+
+#nav-wrapper {
+  text-align: center;
+  background-color: rgb(181, 126, 220);
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav a {
+  color: white;
+  display: inline-block;
+  margin-right: .25em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  padding: .5em;
+  border-radius: 0.25em;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 85%;
+}
+
+@media (min-width: 30em) {
+  #nav a {
+    font-size: 100%;
+  }
+}
+
+#nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#content, #main-content {
+  background-color: white;
+  margin: auto;
+  padding: 1em;
+}
+
+#content {
+  max-width: 50em;
+}
+
+#main-content {
+  max-width: 35em;
+}
+
+.event {
+  background-color: rgba(181, 126, 220, .08);
+  border-radius: 0 0.5em;
+  margin-bottom: 1em;
+}
+
+.event .date {
+  padding: 0.5em;
+  color: white;
+  background-color: rgb(181, 126, 220);
+  border-radius: 0 0.5em;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+
+.event .title {
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
+.event p {
+  margin: 0;
+  margin-top: 1em;
+}
+
+.event .details {
+  float: left;
+  margin: 1em;
+}
+
+.clear {
+  clear: both;
+}
+
+.event .details .link {
+  color: rgb(181, 126, 220);
+}
+
+#social-links {
+  margin-top: 2em;
+  text-align: center;
+}
+
+#social-links img {
+  margin-left: 1em;
+}
+
+.float-right {
+  float: right;
+}
+
+#back-bar {
+  text-align: center;
+  background-color: rgb(181, 126, 220);
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
+}
+
+#back-bar a {
+  color: white;
+  
+}
+
+.right {
+  text-align: right;
+}
+
+.note, .warning {
+  padding: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-radius: 0.25em;
+}
+
+.note {
+  background-color: rgba(0,0,255,0.05);
+  border: 1px solid rgba(0,0,255,0.5);
+}
+
+.warning {
+  background-color: rgba(255,0,0,0.2);
+  border: 1px solid rgba(255,0,0,0.5);
+}
+
+#register-button {
+  background-color: rgb(181, 126, 220);
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  text-align: center;
+  display: block;
+  color: white;
+}
