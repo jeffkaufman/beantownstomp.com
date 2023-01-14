@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
 }
 
-a {
+a, summary{
   text-decoration: none;
   color: rgb(181, 126, 220);
 }
