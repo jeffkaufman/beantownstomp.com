@@ -20,11 +20,42 @@ th {
   background-color: rgba(181, 126, 220, 0.4);
 }
 .archived {
-  margin: 2em;
-  padding: 2em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin: 0;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  padding: 1.5em;
   border: 1px solid rgba(181, 126, 220, 0.6);
-  border-radius: 1em;
-  background-color: rgba(181, 126, 220, 0.2);
+  border-top: 0;
+  border-radius: 0 0 1em 1em;
+  background-color: rgb(237, 224, 245);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.archived-content {
+  flex: 1;
+}
+
+.close-button {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.2em 0.5em;
+  border-radius: 50%;
+  background-color: rgba(181, 126, 220, 0.4);
+  margin-left: 1em;
+}
+
+.close-button:hover {
+  background-color: rgba(181, 126, 220, 0.6);
+}
+
+.hidden {
+  display: none;
 }
 </style>
 
@@ -45,12 +76,14 @@ th {
 
 <div id=content>
 
-<div class=archived>
+<div class=archived id=archived-banner>
+  <div class="archived-content">
 
 This is an archived page, which we've kept online for historical
 reasons.  To see information on the next Beantown Stomp, visit <a
-href="https://beantownstomp.com\">beantownstomp.com</a>.
-
+href="https://beantownstomp.com">beantownstomp.com</a>.
+  </div>
+  <span class="close-button" id="close-banner">x</span>
 </div>
 
 <big>
@@ -58,6 +91,12 @@ Thank you all for making our first Beantown Stomp a wonderful weekend!
 Please let us know how it went and how we can do better by filling out
 our <a href="/feedback">post-weekend survey</a>.
 </big>
+
+<script>
+  document.getElementById('close-banner').addEventListener('click', function() {
+    document.getElementById('archived-banner').classList.add('hidden');
+  });
+</script>
 
 <hr>
 
